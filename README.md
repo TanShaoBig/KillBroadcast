@@ -4,6 +4,8 @@ KillBroadcast 是面向网易《我的世界》基岩版 ModSDK 的独立击杀�
 
 当前发布版本：`0.1.10`
 
+> 模组开发者：请从[开发者接入指南](DEVELOPER_INTEGRATION.md)开始阅读；完整字段、生命周期和排错说明见[外部击杀确认 API](behavior_pack_KillBroadcast/KillBroadcastScript/script/EXTERNAL_KILL_API.md)。
+
 ## 下载
 
 - [下载最新 Release](https://github.com/TanShaoBig/KillBroadcast/releases/latest)
@@ -45,6 +47,7 @@ resource_pack_KillBroadcast/   JSON UI、纹理与音频资源
 
 完整参数、生命周期、示例和排错说明见：
 
+- [开发者接入指南（推荐入口）](DEVELOPER_INTEGRATION.md)
 - [外部击杀确认 API](behavior_pack_KillBroadcast/KillBroadcastScript/script/EXTERNAL_KILL_API.md)
 - [兼容 Helper 说明](behavior_pack_KillBroadcast/KillBroadcastScript/script/README.txt)
 

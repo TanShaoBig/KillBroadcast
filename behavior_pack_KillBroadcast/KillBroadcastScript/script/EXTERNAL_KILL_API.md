@@ -7,6 +7,7 @@
 ## 项目与下载
 
 - GitHub 仓库：[TanShaoBig/KillBroadcast](https://github.com/TanShaoBig/KillBroadcast)
+- 开发者接入指南：[DEVELOPER_INTEGRATION.md](https://github.com/TanShaoBig/KillBroadcast/blob/main/DEVELOPER_INTEGRATION.md)
 - 最新 Release：[GitHub Releases](https://github.com/TanShaoBig/KillBroadcast/releases/latest)
 - 当前版本：[`v0.1.10`](https://github.com/TanShaoBig/KillBroadcast/releases/tag/v0.1.10)
 - ZIP 直链：[下载 `KillBroadcast-v0.1.10.zip`](https://github.com/TanShaoBig/KillBroadcast/releases/download/v0.1.10/KillBroadcast-v0.1.10.zip)
