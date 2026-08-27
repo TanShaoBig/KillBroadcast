@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_copper_golem",
+            "is_spawnable": false,
+            "is_summonable": false,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.6,
+                "height": 0.98
+            },
+            "minecraft:physics": {
+                "has_gravity": false,
+                "has_collision": false
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_chicken",
+            "materials": {
+                "default": "chicken",
+                "legs": "chicken_legs"
+            },
+            "geometry": {
+                "default": "geometry.chicken.v1.12"
+            },
+            "textures": {
+                "default": "textures/entity/chicken/chicken"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ]
+        }
+    }
+}

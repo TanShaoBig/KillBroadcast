@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_cow",
+            "is_spawnable": false,
+            "is_summonable": false,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.9,
+                "height": 1.3
+            },
+            "minecraft:physics": {
+                "has_gravity": false,
+                "has_collision": false
+            }
+        }
+    }
+}

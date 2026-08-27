@@ -1,0 +1,7 @@
+{
+    "ui_defs": [
+        "ui/KillBroadcast.json",
+        "ui/KillBroadcastGame.json",
+        "ui/KillBroadcastSetting.json"
+    ]
+}

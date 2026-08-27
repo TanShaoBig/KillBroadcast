@@ -1,0 +1,40 @@
+{
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "e94104d0-c972-4326-883f-6783eb28f312",
+      "version": [
+        0,
+        1,
+        10
+      ],
+      "description": "Independent kill feedback behavior module"
+    }
+  ],
+  "header": {
+    "uuid": "3d0bb45c-c1a5-4124-a258-be1f2768d96c",
+    "version": [
+      0,
+      1,
+      10
+    ],
+    "name": "Kill Broadcast BP",
+    "description": "Independent kill feedback and hit marker behavior",
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "dependencies": [
+    {
+      "uuid": "313dcd4c-70cc-4e40-a642-4a15d94aa0ad",
+      "version": [
+        0,
+        1,
+        10
+      ]
+    }
+  ],
+  "format_version": 1
+}

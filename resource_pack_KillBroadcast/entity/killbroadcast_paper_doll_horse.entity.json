@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_horse",
+            "materials": {
+                "default": "horse_leather_armor"
+            },
+            "geometry": {
+                "default": "geometry.horse.v2"
+            },
+            "textures": {
+                "default": "textures/entity/horse2/horse_brown"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ]
+        }
+    }
+}

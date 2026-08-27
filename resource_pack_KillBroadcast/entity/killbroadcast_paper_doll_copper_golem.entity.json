@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_copper_golem",
+            "materials": {
+                "default": "copper_golem"
+            },
+            "geometry": {
+                "default": "geometry.copper_golem"
+            },
+            "textures": {
+                "default": "textures/entity/copper_golem/copper_golem"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_creaking",
+            "materials": {
+                "default": "creaking"
+            },
+            "geometry": {
+                "default": "geometry.creaking"
+            },
+            "textures": {
+                "default": "textures/entity/creaking/creaking"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_armadillo",
+            "materials": {
+                "default": "armadillo"
+            },
+            "geometry": {
+                "default": "geometry.armadillo"
+            },
+            "textures": {
+                "default": "textures/entity/armadillo"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ]
+        }
+    }
+}

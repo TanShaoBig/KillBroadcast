@@ -1,0 +1,1752 @@
+{
+    "Game": {
+        "type": "screen",
+        "absorbs_input": false,
+        "always_accepts_input": false,
+        "render_game_behind": true,
+        "render_only_when_topmost": false,
+        "is_showing_menu": false,
+        "is_modal": false,
+        "should_steal_mouse": false,
+        "button_mappings": [],
+        "controls": [
+            {
+                "GamePanel": {
+                    "type": "panel",
+                    "size": [
+                        "100%",
+                        "100%"
+                    ],
+                    "layer": 1,
+                    "visible": true,
+                    "controls": [
+                        {
+                            "CrosshairPanel": {
+                                "type": "panel",
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "size": [
+                                    "100%y+0px",
+                                    "35%+0px"
+                                ],
+                                "layer": 1,
+                                "propagate_alpha": true,
+                                "visible": false,
+                                "controls": [
+                                    {
+                                        "Middle": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": [
+                                                "0%+0px",
+                                                "0%+0px"
+                                            ],
+                                            "size": [
+                                                "1%+0px",
+                                                "1%+0px"
+                                            ],
+                                            "layer": 1,
+                                            "keep_ratio": false,
+                                            "texture": "textures/ui/white"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "HitMarkerPanel": {
+                                "type": "panel",
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "offset": [
+                                    "0%",
+                                    "0%"
+                                ],
+                                "size": [
+                                    "100%y",
+                                    "21%"
+                                ],
+                                "layer": 30,
+                                "propagate_alpha": true,
+                                "visible": false,
+                                "controls": [
+                                    {
+                                        "TopLeft": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": [
+                                                "-25%",
+                                                "-25%"
+                                            ],
+                                            "size": [
+                                                "12.5%y",
+                                                "16.667%"
+                                            ],
+                                            "layer": 1,
+                                            "keep_ratio": false,
+                                            "texture": "textures/ui/white"
+                                        }
+                                    },
+                                    {
+                                        "TopRight": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": [
+                                                "25%",
+                                                "-25%"
+                                            ],
+                                            "size": [
+                                                "12.5%y",
+                                                "16.667%"
+                                            ],
+                                            "layer": 1,
+                                            "keep_ratio": false,
+                                            "texture": "textures/ui/white"
+                                        }
+                                    },
+                                    {
+                                        "BottomLeft": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": [
+                                                "-25%",
+                                                "25%"
+                                            ],
+                                            "size": [
+                                                "12.5%y",
+                                                "16.667%"
+                                            ],
+                                            "layer": 1,
+                                            "keep_ratio": false,
+                                            "texture": "textures/ui/white"
+                                        }
+                                    },
+                                    {
+                                        "BottomRight": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": [
+                                                "25%",
+                                                "25%"
+                                            ],
+                                            "size": [
+                                                "12.5%y",
+                                                "16.667%"
+                                            ],
+                                            "layer": 1,
+                                            "keep_ratio": false,
+                                            "texture": "textures/ui/white"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "KillPanel": {
+                    "type": "panel",
+                    "enabled": false,
+                    "anchor_from": "top_left",
+                    "anchor_to": "center",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ],
+                    "size": [
+                        "100%+0px",
+                        "13%+0px"
+                    ],
+                    "layer": 20,
+                    "propagate_alpha": true,
+                    "visible": false,
+                    "controls": [
+                        {
+                            "Team": {
+                                "type": "image",
+                                "size": [
+                                    "100%y+0px",
+                                    "65%+0px"
+                                ],
+                                "layer": 2,
+                                "keep_ratio": true,
+                                "texture": "textures/ui/killbroadcast_csgo_map_ui/Game_UI/teamT",
+                                "controls": [
+                                    {
+                                        "circle": {
+                                            "type": "image",
+                                            "size": [
+                                                "130%+0px",
+                                                "130%+0px"
+                                            ],
+                                            "layer": -1,
+                                            "color": [
+                                                0.7686274509803922,
+                                                0.7372549019607844,
+                                                0.4235294117647059
+                                            ],
+                                            "texture": "textures/ui/killbroadcast_csgo_map_ui/Game_UI/circle",
+                                            "controls": [
+                                                {
+                                                    "poker_kill_bar": {
+                                                        "type": "panel",
+                                                        "layer": 1,
+                                                        "controls": [
+                                                            {
+                                                                "1": {
+                                                                    "type": "image",
+                                                                    "anchor_from": "top_middle",
+                                                                    "offset": [
+                                                                        "0%+0px",
+                                                                        "-28%+0px"
+                                                                    ],
+                                                                    "size": [
+                                                                        "65%+0px",
+                                                                        "138%x+0px"
+                                                                    ],
+                                                                    "layer": -2,
+                                                                    "nineslice_size": [
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0
+                                                                    ],
+                                                                    "rotate_pivot": [
+                                                                        0.5,
+                                                                        1.0
+                                                                    ],
+                                                                    "texture": "textures/ui/killbroadcast_csgo_map_ui/around",
+                                                                    "controls": [
+                                                                        {
+                                                                            "bone_1": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "offset": [
+                                                                                    "10%+0px",
+                                                                                    "10%+0px"
+                                                                                ],
+                                                                                "size": [
+                                                                                    "35%+0px",
+                                                                                    "100%x+0px"
+                                                                                ],
+                                                                                "layer": 1,
+                                                                                "rotate_pivot": [
+                                                                                    1.14,
+                                                                                    2.57
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_csgo_map_ui/Game_UI/bones/bone"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "count": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "offset": [
+                                                                                    "37%+0px",
+                                                                                    "37%+0px"
+                                                                                ],
+                                                                                "size": [
+                                                                                    "80%y+0px",
+                                                                                    "25%+0px"
+                                                                                ],
+                                                                                "layer": 1,
+                                                                                "rotate_pivot": [
+                                                                                    0.16,
+                                                                                    2.52
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_number/1"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "bone_2": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "offset": [
+                                                                                    "58%+0px",
+                                                                                    "64%+0px"
+                                                                                ],
+                                                                                "size": [
+                                                                                    "35%+0px",
+                                                                                    "100%x+0px"
+                                                                                ],
+                                                                                "rotate_pivot": [
+                                                                                    -0.22,
+                                                                                    1.02
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_csgo_map_ui/Game_UI/bones/upsidedown_bone"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "bg": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "layer": -1,
+                                                                                "color": [
+                                                                                    0.7686274509803922,
+                                                                                    0.7372549019607844,
+                                                                                    0.4235294117647059
+                                                                                ],
+                                                                                "keep_ratio": false,
+                                                                                "rotate_pivot": [
+                                                                                    0.5,
+                                                                                    1.0
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_white"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "effect": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "bottom_middle",
+                                                                                "anchor_to": "bottom_middle",
+                                                                                "size": [
+                                                                                    "100%+0px",
+                                                                                    0
+                                                                                ],
+                                                                                "alpha": "@KillBroadcast.kill_effect_1",
+                                                                                "color": "@KillBroadcast.kill_color_1",
+                                                                                "keep_ratio": false,
+                                                                                "rotate_pivot": [
+                                                                                    0.5,
+                                                                                    1.0
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_csgo_map_ui/Game_UI/effect_poker_killing"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "count_label": {
+                                                                                "type": "label",
+                                                                                "offset": [
+                                                                                    "0%+0px",
+                                                                                    "3%+0px"
+                                                                                ],
+                                                                                "layer": 1,
+                                                                                "visible": false,
+                                                                                "font_type": "default",
+                                                                                "text": "1",
+                                                                                "text_alignment": "center"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "2": {
+                                                                    "type": "image",
+                                                                    "anchor_from": "top_middle",
+                                                                    "offset": [
+                                                                        "0%+0px",
+                                                                        "-28%+0px"
+                                                                    ],
+                                                                    "size": [
+                                                                        "65%+0px",
+                                                                        "138%x+0px"
+                                                                    ],
+                                                                    "layer": -5,
+                                                                    "nineslice_size": [
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0
+                                                                    ],
+                                                                    "rotate_pivot": [
+                                                                        0.5,
+                                                                        1.0
+                                                                    ],
+                                                                    "texture": "textures/ui/killbroadcast_csgo_map_ui/around",
+                                                                    "controls": [
+                                                                        {
+                                                                            "bone_1": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "offset": [
+                                                                                    "10%+0px",
+                                                                                    "10%+0px"
+                                                                                ],
+                                                                                "size": [
+                                                                                    "35%+0px",
+                                                                                    "100%x+0px"
+                                                                                ],
+                                                                                "layer": 1,
+                                                                                "rotate_pivot": [
+                                                                                    1.14,
+                                                                                    2.57
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_csgo_map_ui/Game_UI/bones/bone"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "bg": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "layer": -1,
+                                                                                "color": [
+                                                                                    0.7686274509803922,
+                                                                                    0.7372549019607844,
+                                                                                    0.4235294117647059
+                                                                                ],
+                                                                                "keep_ratio": false,
+                                                                                "rotate_pivot": [
+                                                                                    0.5,
+                                                                                    1.0
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_white"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "3": {
+                                                                    "type": "image",
+                                                                    "anchor_from": "top_middle",
+                                                                    "offset": [
+                                                                        "0%+0px",
+                                                                        "-28%+0px"
+                                                                    ],
+                                                                    "size": [
+                                                                        "65%+0px",
+                                                                        "138%x+0px"
+                                                                    ],
+                                                                    "layer": -10,
+                                                                    "nineslice_size": [
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0
+                                                                    ],
+                                                                    "rotate_pivot": [
+                                                                        0.5,
+                                                                        1.0
+                                                                    ],
+                                                                    "texture": "textures/ui/killbroadcast_csgo_map_ui/around",
+                                                                    "controls": [
+                                                                        {
+                                                                            "bone_1": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "offset": [
+                                                                                    "10%+0px",
+                                                                                    "10%+0px"
+                                                                                ],
+                                                                                "size": [
+                                                                                    "35%+0px",
+                                                                                    "100%x+0px"
+                                                                                ],
+                                                                                "layer": 1,
+                                                                                "rotate_pivot": [
+                                                                                    1.14,
+                                                                                    2.57
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_csgo_map_ui/Game_UI/bones/bone"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "bg": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "layer": -1,
+                                                                                "color": [
+                                                                                    0.7686274509803922,
+                                                                                    0.7372549019607844,
+                                                                                    0.4235294117647059
+                                                                                ],
+                                                                                "keep_ratio": false,
+                                                                                "rotate_pivot": [
+                                                                                    0.5,
+                                                                                    1.0
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_white"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "4": {
+                                                                    "type": "image",
+                                                                    "anchor_from": "top_middle",
+                                                                    "offset": [
+                                                                        "0%+0px",
+                                                                        "-28%+0px"
+                                                                    ],
+                                                                    "size": [
+                                                                        "65%+0px",
+                                                                        "138%x+0px"
+                                                                    ],
+                                                                    "layer": -15,
+                                                                    "nineslice_size": [
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0
+                                                                    ],
+                                                                    "rotate_pivot": [
+                                                                        0.5,
+                                                                        1.0
+                                                                    ],
+                                                                    "texture": "textures/ui/killbroadcast_csgo_map_ui/around",
+                                                                    "controls": [
+                                                                        {
+                                                                            "bone_1": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "offset": [
+                                                                                    "10%+0px",
+                                                                                    "10%+0px"
+                                                                                ],
+                                                                                "size": [
+                                                                                    "35%+0px",
+                                                                                    "100%x+0px"
+                                                                                ],
+                                                                                "layer": 1,
+                                                                                "rotate_pivot": [
+                                                                                    1.14,
+                                                                                    2.57
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_csgo_map_ui/Game_UI/bones/bone"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "bg": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "layer": -1,
+                                                                                "color": [
+                                                                                    0.7686274509803922,
+                                                                                    0.7372549019607844,
+                                                                                    0.4235294117647059
+                                                                                ],
+                                                                                "keep_ratio": false,
+                                                                                "rotate_pivot": [
+                                                                                    0.5,
+                                                                                    1.0
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_white"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "5": {
+                                                                    "type": "image",
+                                                                    "anchor_from": "top_middle",
+                                                                    "offset": [
+                                                                        "0%+0px",
+                                                                        "-28%+0px"
+                                                                    ],
+                                                                    "size": [
+                                                                        "65%+0px",
+                                                                        "138%x+0px"
+                                                                    ],
+                                                                    "layer": -20,
+                                                                    "nineslice_size": [
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0,
+                                                                        1.0
+                                                                    ],
+                                                                    "rotate_pivot": [
+                                                                        0.5,
+                                                                        1.0
+                                                                    ],
+                                                                    "texture": "textures/ui/killbroadcast_csgo_map_ui/around",
+                                                                    "controls": [
+                                                                        {
+                                                                            "bone_1": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "offset": [
+                                                                                    "10%+0px",
+                                                                                    "10%+0px"
+                                                                                ],
+                                                                                "size": [
+                                                                                    "35%+0px",
+                                                                                    "100%x+0px"
+                                                                                ],
+                                                                                "layer": 1,
+                                                                                "rotate_pivot": [
+                                                                                    1.14,
+                                                                                    2.57
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_csgo_map_ui/Game_UI/bones/bone"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "bg": {
+                                                                                "type": "image",
+                                                                                "anchor_from": "top_left",
+                                                                                "anchor_to": "top_left",
+                                                                                "layer": -1,
+                                                                                "color": [
+                                                                                    0.7686274509803922,
+                                                                                    0.7372549019607844,
+                                                                                    0.4235294117647059
+                                                                                ],
+                                                                                "keep_ratio": false,
+                                                                                "rotate_pivot": [
+                                                                                    0.5,
+                                                                                    1.0
+                                                                                ],
+                                                                                "texture": "textures/ui/killbroadcast_white"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "left_line": {
+                                "type": "image",
+                                "offset": [
+                                    "-25%+0px",
+                                    "0%+0px"
+                                ],
+                                "size": [
+                                    "25%+0px",
+                                    "5%+0px"
+                                ],
+                                "layer": 1,
+                                "clip_direction": "left",
+                                "clip_ratio": 0.0,
+                                "keep_ratio": false,
+                                "texture": "textures/ui/killbroadcast_white"
+                            }
+                        },
+                        {
+                            "right_line": {
+                                "type": "image",
+                                "offset": [
+                                    "25%+0px",
+                                    "0%+0px"
+                                ],
+                                "size": [
+                                    "25%+0px",
+                                    "5%+0px"
+                                ],
+                                "layer": 1,
+                                "clip_direction": "left",
+                                "clip_ratio": 0.0,
+                                "keep_ratio": false,
+                                "texture": "textures/ui/killbroadcast_white"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "KillPanel_DeltaForce": {
+                    "type": "panel",
+                    "enabled": false,
+                    "clips_children": false,
+                    "anchor_from": "top_left",
+                    "anchor_to": "center",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ],
+                    "size": [
+                        "100%+0px",
+                        "13%+0px"
+                    ],
+                    "layer": 20,
+                    "propagate_alpha": true,
+                    "visible": false,
+                    "controls": [
+                        {
+                            "Canvas": {
+                                "type": "panel",
+                                "enabled": false,
+                                "clips_children": false,
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "size": [
+                                    "100%+0px",
+                                    "100%+0px"
+                                ],
+                                "layer": 1,
+                                "propagate_alpha": true,
+                                "controls": [
+                                    {
+                                        "Bar": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "size": [
+                                                "112%y+0px",
+                                                "112%+0px"
+                                            ],
+                                            "layer": 1,
+                                            "visible": false,
+                                            "keep_ratio": true,
+                                            "texture": "textures/ui/killbroadcast_kill_effect/killicon_valorant_singularity_v1_bar"
+                                        }
+                                    },
+                                    {
+                                        "Ring": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "size": [
+                                                "94%y+0px",
+                                                "94%+0px"
+                                            ],
+                                            "layer": 2,
+                                            "visible": false,
+                                            "keep_ratio": true,
+                                            "texture": "textures/ui/killbroadcast_kill_effect/killicon_valorant_base_ring"
+                                        }
+                                    },
+                                    {
+                                        "Frame": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "size": [
+                                                "82%y+0px",
+                                                "105%+0px"
+                                            ],
+                                            "layer": 3,
+                                            "visible": false,
+                                            "keep_ratio": true,
+                                            "texture": "textures/ui/killbroadcast_kill_effect/killicon_valorant_base_frame"
+                                        }
+                                    },
+                                    {
+                                        "Primary": {
+                                            "type": "image",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "size": [
+                                                "100%y+0px",
+                                                "100%+0px"
+                                            ],
+                                            "layer": 4,
+                                            "visible": false,
+                                            "keep_ratio": true,
+                                            "texture": "textures/ui/killbroadcast_kill_effect/killicon_df_default"
+                                        }
+                                    },
+                                    {
+                                        "CuppingCat": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": [
+                                                0,
+                                                0
+                                            ],
+                                            "size": [
+                                                "220%y+0px",
+                                                "220%+0px"
+                                            ],
+                                            "layer": 10,
+                                            "visible": false,
+                                            "keep_ratio": true,
+                                            "texture": "textures/ui/killbroadcast_kill_effect/cupping_cat/cupping_cat_1",
+                                            "uv": [
+                                                0,
+                                                0
+                                            ],
+                                            "uv_size": [
+                                                192,
+                                                192
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "XiaoXiaoWorld": {
+                                            "type": "panel",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "offset": [
+                                                0,
+                                                0
+                                            ],
+                                            "size": [
+                                                385,
+                                                65
+                                            ],
+                                            "layer": 11,
+                                            "propagate_alpha": true,
+                                            "visible": false,
+                                            "controls": [
+                                                {
+                                                    "Banner": {
+                                                        "type": "image",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            385,
+                                                            65
+                                                        ],
+                                                        "layer": 32,
+                                                        "keep_ratio": false,
+                                                        "texture": "textures/ui/killbroadcast_kill_effect/xiaoxiao_world/xiaoxiao_world_1"
+                                                    }
+                                                },
+                                                {
+                                                    "XiaoXiaoWorldRightPlayerIcon": {
+                                                        "type": "image",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            327,
+                                                            7
+                                                        ],
+                                                        "size": [
+                                                            51,
+                                                            51
+                                                        ],
+                                                        "layer": 101,
+                                                        "visible": false,
+                                                        "keep_ratio": false,
+                                                        "texture": "textures/ui/killbroadcast_kill_effect/player_victim_ts"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "KingHonor": {
+                                            "type": "panel",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "offset": [
+                                                0,
+                                                0
+                                            ],
+                                            "size": [
+                                                260,
+                                                64
+                                            ],
+                                            "layer": 12,
+                                            "propagate_alpha": true,
+                                            "visible": false,
+                                            "controls": [
+                                                {
+                                                    "Banner": {
+                                                        "type": "image",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            260,
+                                                            64
+                                                        ],
+                                                        "layer": 32,
+                                                        "keep_ratio": false,
+                                                        "texture": "textures/ui/killbroadcast_kill_effect/king_honor/king_honor_1"
+                                                    }
+                                                },
+                                                {
+                                                    "KingHonorRightPlayerIcon": {
+                                                        "type": "image",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            210,
+                                                            14
+                                                        ],
+                                                        "size": [
+                                                            36,
+                                                            36
+                                                        ],
+                                                        "layer": 101,
+                                                        "visible": false,
+                                                        "keep_ratio": false,
+                                                        "texture": "textures/ui/killbroadcast_kill_effect/player_victim_ts"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "XiaoXiaoWorldLeftDoll": {
+                                            "type": "custom",
+                                            "renderer": "netease_paper_doll_renderer",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "offset": [
+                                                -4096,
+                                                -4096
+                                            ],
+                                            "size": [
+                                                102,
+                                                102
+                                            ],
+                                            "layer": 100,
+                                            "enable_scissor_test": true,
+                                            "init_rot_y": -35.0,
+                                            "rotation": "auto",
+                                            "screen_scale": 1.0
+                                        }
+                                    },
+                                    {
+                                        "XiaoXiaoWorldRightDoll": {
+                                            "type": "custom",
+                                            "renderer": "netease_paper_doll_renderer",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "offset": [
+                                                -4096,
+                                                -4096
+                                            ],
+                                            "size": [
+                                                102,
+                                                102
+                                            ],
+                                            "layer": 100,
+                                            "enable_scissor_test": true,
+                                            "init_rot_y": 35.0,
+                                            "rotation": "auto",
+                                            "screen_scale": 1.0
+                                        }
+                                    },
+                                    {
+                                        "KingHonorLeftDoll": {
+                                            "type": "custom",
+                                            "renderer": "netease_paper_doll_renderer",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "offset": [
+                                                -4096,
+                                                -4096
+                                            ],
+                                            "size": [
+                                                72,
+                                                72
+                                            ],
+                                            "layer": 100,
+                                            "enable_scissor_test": true,
+                                            "init_rot_y": -35.0,
+                                            "rotation": "auto",
+                                            "screen_scale": 1.0
+                                        }
+                                    },
+                                    {
+                                        "KingHonorRightDoll": {
+                                            "type": "custom",
+                                            "renderer": "netease_paper_doll_renderer",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "offset": [
+                                                -4096,
+                                                -4096
+                                            ],
+                                            "size": [
+                                                72,
+                                                72
+                                            ],
+                                            "layer": 100,
+                                            "enable_scissor_test": true,
+                                            "init_rot_y": 35.0,
+                                            "rotation": "auto",
+                                            "screen_scale": 1.0
+                                        }
+                                    },
+                                    {
+                                        "BigDogBark": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": [
+                                                0,
+                                                0
+                                            ],
+                                            "size": [
+                                                300,
+                                                300
+                                            ],
+                                            "layer": 13,
+                                            "visible": false,
+                                            "keep_ratio": true,
+                                            "texture": "textures/ui/killbroadcast_kill_effect/big_dog_bark/big_dog_bark_1"
+                                        }
+                                    },
+                                    {
+                                        "QinshouXiansheng": {
+                                            "type": "image",
+                                            "enabled": false,
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": [
+                                                0,
+                                                0
+                                            ],
+                                            "size": [
+                                                "default",
+                                                "default"
+                                            ],
+                                            "layer": 2000,
+                                            "visible": false,
+                                            "keep_ratio": false,
+                                            "fill": false,
+                                            "texture": "textures/ui/killbroadcast_kill_effect/qinshou_xiansheng/wolf"
+                                        }
+                                    },
+                                    {
+                                        "Emblem": {
+                                            "type": "image",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "size": [
+                                                "62%y+0px",
+                                                "62%+0px"
+                                            ],
+                                            "layer": 4,
+                                            "visible": false,
+                                            "keep_ratio": true,
+                                            "texture": "textures/ui/killbroadcast_kill_effect/killicon_valorant_singularity_v1_emblem"
+                                        }
+                                    },
+                                    {
+                                        "Headshot": {
+                                            "type": "image",
+                                            "anchor_from": "bottom_middle",
+                                            "anchor_to": "bottom_middle",
+                                            "offset": [
+                                                0,
+                                                -2
+                                            ],
+                                            "size": [
+                                                "22%y+0px",
+                                                "22%+0px"
+                                            ],
+                                            "layer": 5,
+                                            "visible": false,
+                                            "keep_ratio": true,
+                                            "texture": "textures/ui/killbroadcast_kill_effect/killicon_valorant_headshot"
+                                        }
+                                    },
+                                    {
+                                        "Queue1@KillBroadcastGame.kill_queue_icon": {}
+                                    },
+                                    {
+                                        "Queue2@KillBroadcastGame.kill_queue_icon": {}
+                                    },
+                                    {
+                                        "Queue3@KillBroadcastGame.kill_queue_icon": {}
+                                    },
+                                    {
+                                        "Queue4@KillBroadcastGame.kill_queue_icon": {}
+                                    },
+                                    {
+                                        "Queue5@KillBroadcastGame.kill_queue_icon": {}
+                                    },
+                                    {
+                                        "Queue6@KillBroadcastGame.kill_queue_icon": {}
+                                    },
+                                    {
+                                        "Queue7@KillBroadcastGame.kill_queue_icon": {}
+                                    },
+                                    {
+                                        "Queue8@KillBroadcastGame.kill_queue_icon": {}
+                                    },
+                                    {
+                                        "Battlefield1": {
+                                            "type": "panel",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "offset": [
+                                                0,
+                                                0
+                                            ],
+                                            "size": [
+                                                1,
+                                                1
+                                            ],
+                                            "layer": 7,
+                                            "propagate_alpha": true,
+                                            "visible": false,
+                                            "controls": [
+                                                {
+                                                    "IconBox": {
+                                                        "type": "image",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            1,
+                                                            1
+                                                        ],
+                                                        "layer": 1,
+                                                        "alpha": 0.2,
+                                                        "color": [
+                                                            0.0,
+                                                            0.0,
+                                                            0.0
+                                                        ],
+                                                        "keep_ratio": false,
+                                                        "texture": "textures/ui/killbroadcast_white"
+                                                    }
+                                                },
+                                                {
+                                                    "TextBox": {
+                                                        "type": "image",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            1,
+                                                            1
+                                                        ],
+                                                        "layer": 1,
+                                                        "alpha": 0.1,
+                                                        "color": [
+                                                            0.0,
+                                                            0.0,
+                                                            0.0
+                                                        ],
+                                                        "keep_ratio": false,
+                                                        "texture": "textures/ui/killbroadcast_white"
+                                                    }
+                                                },
+                                                {
+                                                    "Icon": {
+                                                        "type": "image",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            25,
+                                                            25
+                                                        ],
+                                                        "layer": 2,
+                                                        "keep_ratio": true,
+                                                        "texture": "textures/ui/killbroadcast_kill_effect/killicon_battlefield1_default"
+                                                    }
+                                                },
+                                                {
+                                                    "Victim": {
+                                                        "type": "label",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            "default",
+                                                            "default"
+                                                        ],
+                                                        "layer": 2,
+                                                        "color": [
+                                                            1.0,
+                                                            0.0,
+                                                            0.0
+                                                        ],
+                                                        "font_scale_factor": 1.2,
+                                                        "font_type": "default",
+                                                        "shadow": true,
+                                                        "text": "目标",
+                                                        "text_alignment": "right"
+                                                    }
+                                                },
+                                                {
+                                                    "Weapon": {
+                                                        "type": "label",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            "default",
+                                                            "default"
+                                                        ],
+                                                        "layer": 2,
+                                                        "color": [
+                                                            1.0,
+                                                            1.0,
+                                                            1.0
+                                                        ],
+                                                        "font_scale_factor": 1.0,
+                                                        "font_type": "default",
+                                                        "shadow": true,
+                                                        "text": "武器",
+                                                        "text_alignment": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "Health": {
+                                                        "type": "label",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            "default",
+                                                            "default"
+                                                        ],
+                                                        "layer": 2,
+                                                        "color": [
+                                                            1.0,
+                                                            1.0,
+                                                            1.0
+                                                        ],
+                                                        "font_scale_factor": 1.5,
+                                                        "font_type": "default",
+                                                        "shadow": true,
+                                                        "text": "20",
+                                                        "text_alignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "Count": {
+                                            "type": "label",
+                                            "anchor_from": "bottom_middle",
+                                            "anchor_to": "bottom_middle",
+                                            "offset": [
+                                                "36%y+0px",
+                                                -4
+                                            ],
+                                            "size": [
+                                                42,
+                                                18
+                                            ],
+                                            "layer": 6,
+                                            "visible": false,
+                                            "color": [
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ],
+                                            "font_scale_factor": 1.15,
+                                            "text": "x2",
+                                            "text_alignment": "center"
+                                        }
+                                    },
+                                    {
+                                        "PubgFeed": {
+                                            "type": "panel",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "size": [
+                                                "100%+0px",
+                                                "100%+0px"
+                                            ],
+                                            "layer": 8,
+                                            "propagate_alpha": true,
+                                            "visible": false,
+                                            "controls": [
+                                                {
+                                                    "Line1@KillBroadcastGame.pubg_feed_line": {}
+                                                },
+                                                {
+                                                    "Line2@KillBroadcastGame.pubg_feed_line": {}
+                                                },
+                                                {
+                                                    "Line3@KillBroadcastGame.pubg_feed_line": {}
+                                                },
+                                                {
+                                                    "Line4@KillBroadcastGame.pubg_feed_line": {}
+                                                },
+                                                {
+                                                    "Line5@KillBroadcastGame.pubg_feed_line": {}
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "PubgCombo": {
+                                            "type": "label",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "size": [
+                                                "100%+0px",
+                                                18
+                                            ],
+                                            "layer": 9,
+                                            "visible": false,
+                                            "color": [
+                                                1.0,
+                                                0.207843137254902,
+                                                0.0
+                                            ],
+                                            "font_scale_factor": 1.35,
+                                            "font_type": "default",
+                                            "shadow": true,
+                                            "text": "3 淘汰数",
+                                            "text_alignment": "center"
+                                        }
+                                    },
+                                    {
+                                        "TextPerformance": {
+                                            "type": "panel",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "offset": [
+                                                0,
+                                                34
+                                            ],
+                                            "size": [
+                                                "80%+0px",
+                                                52
+                                            ],
+                                            "layer": 8,
+                                            "propagate_alpha": true,
+                                            "visible": false,
+                                            "controls": [
+                                                {
+                                                    "Main": {
+                                                        "type": "label",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": [
+                                                            "100%+0px",
+                                                            16
+                                                        ],
+                                                        "layer": 1,
+                                                        "color": [
+                                                            1.0,
+                                                            1.0,
+                                                            1.0
+                                                        ],
+                                                        "font_scale_factor": 1.05,
+                                                        "font_type": "default",
+                                                        "text": "Kill +100",
+                                                        "text_alignment": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "Detail": {
+                                                        "type": "label",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            17
+                                                        ],
+                                                        "size": [
+                                                            "100%+0px",
+                                                            14
+                                                        ],
+                                                        "layer": 1,
+                                                        "color": [
+                                                            0.82,
+                                                            0.86,
+                                                            0.9
+                                                        ],
+                                                        "font_scale_factor": 0.82,
+                                                        "font_type": "default",
+                                                        "text": "Target [Weapon]",
+                                                        "text_alignment": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "Score": {
+                                                        "type": "label",
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "offset": [
+                                                            0,
+                                                            33
+                                                        ],
+                                                        "size": [
+                                                            "100%+0px",
+                                                            16
+                                                        ],
+                                                        "layer": 1,
+                                                        "color": [
+                                                            0.96,
+                                                            0.77,
+                                                            0.22
+                                                        ],
+                                                        "font_scale_factor": 0.95,
+                                                        "font_type": "default",
+                                                        "text": "+100",
+                                                        "text_alignment": "center"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "battlefield1_banner": {
+        "type": "panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [
+            0,
+            0
+        ],
+        "size": [
+            1,
+            1
+        ],
+        "layer": 7,
+        "propagate_alpha": true,
+        "visible": false,
+        "controls": [
+            {
+                "IconBox": {
+                    "type": "image",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "size": [
+                        1,
+                        1
+                    ],
+                    "layer": 1,
+                    "alpha": 0.2,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "keep_ratio": false,
+                    "texture": "textures/ui/killbroadcast_white"
+                }
+            },
+            {
+                "TextBox": {
+                    "type": "image",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "size": [
+                        1,
+                        1
+                    ],
+                    "layer": 1,
+                    "alpha": 0.1,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "keep_ratio": false,
+                    "texture": "textures/ui/killbroadcast_white"
+                }
+            },
+            {
+                "Icon": {
+                    "type": "image",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "size": [
+                        25,
+                        25
+                    ],
+                    "layer": 2,
+                    "keep_ratio": true,
+                    "texture": "textures/ui/killbroadcast_kill_effect/killicon_battlefield1_default"
+                }
+            },
+            {
+                "Victim": {
+                    "type": "label",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "size": [
+                        "default",
+                        "default"
+                    ],
+                    "layer": 2,
+                    "color": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    "font_scale_factor": 1.2,
+                    "font_type": "default",
+                    "shadow": true,
+                    "text": "目标",
+                    "text_alignment": "right"
+                }
+            },
+            {
+                "Weapon": {
+                    "type": "label",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "size": [
+                        "default",
+                        "default"
+                    ],
+                    "layer": 2,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "font_scale_factor": 1.0,
+                    "font_type": "default",
+                    "shadow": true,
+                    "text": "武器",
+                    "text_alignment": "center"
+                }
+            },
+            {
+                "Health": {
+                    "type": "label",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "size": [
+                        "default",
+                        "default"
+                    ],
+                    "layer": 2,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "font_scale_factor": 1.5,
+                    "font_type": "default",
+                    "shadow": true,
+                    "text": "20",
+                    "text_alignment": "left"
+                }
+            }
+        ]
+    },
+    "kill_queue_icon": {
+        "type": "image",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "size": [
+            24,
+            24
+        ],
+        "layer": 4,
+        "visible": false,
+        "keep_ratio": true,
+        "texture": "textures/ui/killbroadcast_kill_effect/killicon_df_default"
+    },
+    "namespace": "KillBroadcastGame",
+    "pubg_feed_line": {
+        "type": "panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "size": [
+            "100%+0px",
+            12
+        ],
+        "layer": 8,
+        "propagate_alpha": true,
+        "visible": false,
+        "controls": [
+            {
+                "Background": {
+                    "type": "image",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "size": [
+                        100,
+                        19
+                    ],
+                    "layer": 0,
+                    "alpha": 0.3,
+                    "visible": false,
+                    "color": [
+                        0.04,
+                        0.035,
+                        0.05
+                    ],
+                    "keep_ratio": false,
+                    "texture": "textures/ui/killbroadcast_white"
+                }
+            },
+            {
+                "Prefix": {
+                    "type": "label",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "size": [
+                        80,
+                        12
+                    ],
+                    "layer": 1,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "font_scale_factor": 0.82,
+                    "font_type": "default",
+                    "shadow": true,
+                    "text": "你用武器",
+                    "text_alignment": "center"
+                }
+            },
+            {
+                "Emphasis": {
+                    "type": "label",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "size": [
+                        20,
+                        12
+                    ],
+                    "layer": 1,
+                    "color": [
+                        1.0,
+                        0.207843137254902,
+                        0.0
+                    ],
+                    "font_scale_factor": 0.82,
+                    "font_type": "default",
+                    "shadow": true,
+                    "text": "淘汰",
+                    "text_alignment": "center"
+                }
+            },
+            {
+                "Suffix": {
+                    "type": "label",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "size": [
+                        80,
+                        12
+                    ],
+                    "layer": 1,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "font_scale_factor": 0.82,
+                    "font_type": "default",
+                    "shadow": true,
+                    "text": "了 敌方玩家 25.8米",
+                    "text_alignment": "center"
+                }
+            },
+            {
+                "Badge": {
+                    "type": "label",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "size": [
+                        22,
+                        12
+                    ],
+                    "layer": 1,
+                    "visible": false,
+                    "color": [
+                        0.78,
+                        0.8,
+                        0.82
+                    ],
+                    "font_scale_factor": 0.72,
+                    "font_type": "default",
+                    "shadow": true,
+                    "text": " ▲♦",
+                    "text_alignment": "center"
+                }
+            },
+            {
+                "Damage": {
+                    "type": "label",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "offset": [
+                        0,
+                        12
+                    ],
+                    "size": [
+                        "100%+0px",
+                        11
+                    ],
+                    "layer": 1,
+                    "visible": false,
+                    "color": [
+                        0.92,
+                        0.92,
+                        0.92
+                    ],
+                    "font_scale_factor": 0.72,
+                    "font_type": "default",
+                    "shadow": true,
+                    "text": "造成 20 点伤害",
+                    "text_alignment": "center"
+                }
+            }
+        ]
+    }
+}

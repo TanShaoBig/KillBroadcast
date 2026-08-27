@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_pig",
+            "materials": {
+                "default": "pig_v3"
+            },
+            "geometry": {
+                "default": "geometry.pig.v3"
+            },
+            "textures": {
+                "default": "textures/entity/pig/pig_v3"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ]
+        }
+    }
+}

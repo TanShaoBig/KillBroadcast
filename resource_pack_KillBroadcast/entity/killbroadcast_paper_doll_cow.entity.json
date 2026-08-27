@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_cow",
+            "materials": {
+                "default": "cow"
+            },
+            "geometry": {
+                "default": "geometry.cow.v2"
+            },
+            "textures": {
+                "default": "textures/entity/cow/cow_v2"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ]
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "dce22398-e6ab-49ee-b5b5-d9e79de91154",
+      "version": [
+        0,
+        1,
+        10
+      ],
+      "description": "Independent kill feedback resource module"
+    }
+  ],
+  "header": {
+    "uuid": "313dcd4c-70cc-4e40-a642-4a15d94aa0ad",
+    "version": [
+      0,
+      1,
+      10
+    ],
+    "name": "Kill Broadcast RP",
+    "description": "Independent kill feedback and hit marker resources",
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "format_version": 1
+}

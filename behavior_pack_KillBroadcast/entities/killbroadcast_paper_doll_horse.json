@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "killbroadcast:paper_doll_horse",
+            "is_spawnable": false,
+            "is_summonable": false,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 1.4,
+                "height": 1.6
+            },
+            "minecraft:physics": {
+                "has_gravity": false,
+                "has_collision": false
+            }
+        }
+    }
+}

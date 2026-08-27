@@ -1,0 +1,101 @@
+{
+    "kill_color_1": {
+        "anim_type": "color",
+        "duration": 0.3,
+        "from": [
+            0.9216,
+            1,
+            0.4118
+        ],
+        "next": "@KillBroadcast.kill_color_2",
+        "to": [
+            0.6039,
+            0.3216,
+            1
+        ]
+    },
+    "kill_color_2": {
+        "anim_type": "color",
+        "duration": 0.3,
+        "from": [
+            0.6039,
+            0.3216,
+            1
+        ],
+        "next": "@KillBroadcast.kill_color_3",
+        "to": [
+            0.2941,
+            1,
+            0.9412
+        ]
+    },
+    "kill_color_3": {
+        "anim_type": "color",
+        "duration": 0.3,
+        "from": [
+            0.2902,
+            1,
+            0.9412
+        ],
+        "next": "",
+        "to": [
+            1,
+            0.2784,
+            0.2902
+        ]
+    },
+    "kill_effect_1": {
+        "anim_type": "alpha",
+        "duration": 0.3,
+        "from": 0,
+        "next": "@KillBroadcast.kill_effect_2",
+        "to": 0.8
+    },
+    "kill_effect_2": {
+        "anim_type": "alpha",
+        "duration": 0.7,
+        "from": 0.8,
+        "next": "",
+        "to": 0
+    },
+    "kill_effect_size_1": {
+        "anim_type": "size",
+        "duration": 0.2,
+        "from": [
+            "100%+0px",
+            0
+        ],
+        "next": "@KillBroadcast.kill_effect_size_2",
+        "to": [
+            "100%+0px",
+            "520%+0px"
+        ]
+    },
+    "kill_effect_size_2": {
+        "anim_type": "size",
+        "duration": 0.6,
+        "from": [
+            "100%+0px",
+            "520%+0px"
+        ],
+        "next": "@KillBroadcast.kill_effect_size_3",
+        "to": [
+            "100%+0px",
+            "520%+0px"
+        ]
+    },
+    "kill_effect_size_3": {
+        "anim_type": "size",
+        "duration": 0.2,
+        "from": [
+            "100%+0px",
+            "520%+0px"
+        ],
+        "next": "",
+        "to": [
+            "100%+0px",
+            "0%+0px"
+        ]
+    },
+    "namespace": "KillBroadcast"
+}
