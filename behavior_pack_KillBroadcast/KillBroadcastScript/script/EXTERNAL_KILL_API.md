@@ -4,8 +4,21 @@
 
 > API 版本：`1`；运行侧：服务端 Python 2.7；系统：`KillBroadcast` / `KillBroadcastServerSystem`
 
+## 项目与下载
+
+- GitHub 仓库：[TanShaoBig/KillBroadcast](https://github.com/TanShaoBig/KillBroadcast)
+- 最新 Release：[GitHub Releases](https://github.com/TanShaoBig/KillBroadcast/releases/latest)
+- 当前版本：[`v0.1.10`](https://github.com/TanShaoBig/KillBroadcast/releases/tag/v0.1.10)
+- ZIP 直链：[下载 `KillBroadcast-v0.1.10.zip`](https://github.com/TanShaoBig/KillBroadcast/releases/download/v0.1.10/KillBroadcast-v0.1.10.zip)
+- 问题反馈：[GitHub Issues](https://github.com/TanShaoBig/KillBroadcast/issues)
+- 开源协议：[MIT License](https://github.com/TanShaoBig/KillBroadcast/blob/main/LICENSE)
+- 第三方素材声明：[THIRD_PARTY_NOTICES.md](https://github.com/TanShaoBig/KillBroadcast/blob/main/THIRD_PARTY_NOTICES.md)
+
+代码及本项目移植、改造部分采用 MIT License，使用、修改或再发布时须保留版权和许可声明。图片、音频等非原创第三方素材不包含在本项目 MIT 授权范围内，使用前请查看第三方素材声明。
+
 ## 目录
 
+- [项目与下载](#项目与下载)
 - [1. 接入前须知](#1-接入前须知)
 - [2. 最小接入流程](#2-最小接入流程)
 - [3. 注册和注销托管实体类型](#3-注册和注销托管实体类型)
