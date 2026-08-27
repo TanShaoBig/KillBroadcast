@@ -50,15 +50,9 @@ resource_pack_KillBroadcast/   JSON UI、纹理与音频资源
 
 ## 开发与验证
 
-运行环境为网易 ModSDK 使用的 Python 2.7。仓库测试可在项目根目录执行：
+运行环境为网易 ModSDK 使用的 Python 2.7。本次发布已在完整开发工作区通过包依赖闭合、JSON/UI/音频引用、击杀归因、外部死亡确认和布局逻辑等静态测试；为保持公开仓库精简，内部维护脚本不包含在发布内容中。
 
-```powershell
-python2.7 -B tools/test_package_integrity.py
-python2.7 -B tools/test_server_kill_compat.py
-python2.7 -B tools/test_kill_effect_layout.py
-```
-
-这些测试覆盖包依赖闭合、JSON/UI/音频引用、击杀归因、外部死亡确认和布局逻辑。静态测试通过不等同于真机或联机环境验收；触摸输入、音频、加载顺序和最终 UI 合成仍需进入游戏验证。
+静态测试通过不等同于真机或联机环境验收；触摸输入、音频、加载顺序和最终 UI 合成仍需进入游戏验证。
 
 ## 开源与署名
 
